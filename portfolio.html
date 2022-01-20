@@ -24,34 +24,38 @@
     <!--Шапка-->
     <header class="header">
       <div class="container main-nav">
-        <a class="header-logo link" href="/"
-          >Web<span class="header-logo-sudio">Studio</span>
+        <a class="main-nav__logo link" href="/"
+          >Web<span class="main-nav__sudio">Studio</span>
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link" href="./index.html">Студия</a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студия</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link current" href="">Портфолио</a>
+            <li class="nav__item">
+              <a
+                class="nav__link link nav__link--current"
+                href=""
+                >Портфолио</a
+              >
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-list-address list">
-          <li class="header-item">
-            <a class="header-address link" href="mailto:info@devstudio.com">
-              <svg class="header-address-icon" width="16" height="12">
+        <ul class="contact-list list">
+          <li class="contact-list__item">
+            <a class="contact-list__link link" href="mailto:info@devstudio.com">
+              <svg class="contact-list__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="header-address link" href="tel:0961111111">
-              <svg class="header-address-icon" width="10" height="16">
+          <li class="contact-list__item">
+            <a class="contact-list__link link" href="tel:0961111111">
+              <svg class="contact-list__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -61,31 +65,31 @@
       </div>
     </header>
     <!--Основная информация-->
-    <main class="main">
+    <main>
       <div class="container">
-        <div class="only-button">
-          <h1 class="main-title visually-hidden">Выбор услуг</h1>
-          <ul class="list main-list">
-            <li class="main-item">
-              <button class="main-button btn-first" type="button">Все</button>
+        <div class="button">
+          <h1 class="button__title visually-hidden">Выбор услуг</h1>
+          <ul class="list button__list">
+            <li class="button__item">
+              <button class="button__btn btn-first" type="button">Все</button>
             </li>
-            <li class="main-item">
-              <button class="main-button btn-second" type="button">
+            <li class="button__item">
+              <button class="button__btn btn-second" type="button">
                 Веб-сайты
               </button>
             </li>
-            <li class="main-item">
-              <button class="main-button btn-third" type="button">
+            <li class="button__item">
+              <button class="button__btn btn-third" type="button">
                 Приложения
               </button>
             </li>
-            <li class="main-item">
-              <button class="main-button btn-fourth" type="button">
+            <li class="button__item">
+              <button class="button__btn btn-fourth" type="button">
                 Дизайн
               </button>
             </li>
-            <li class="main-item">
-              <button class="main-button btn-fifth" type="button">
+            <li class="button__item">
+              <button class="button__btn btn-fifth" type="button">
                 Маркетинг
               </button>
             </li>
@@ -95,19 +99,19 @@
       <!--Примеры работ-->
       <div class="container">
         <div class="examples">
-          <h2 class="examples-title visually-hidden">Примеры работ</h2>
-          <ul class="list examples-list">
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+          <h2 class="examples__title visually-hidden">Примеры работ</h2>
+          <ul class="list examples__list">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img1.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -115,24 +119,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Технокряк</h3>
-                  <p class="about-text-list">Веб-сайт</p>
+                <div class="product">
+                  <h3 class="product__name">Технокряк</h3>
+                  <p class="product__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img2.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -140,25 +143,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">
+                <div class="product">
+                  <h3 class="product__name">
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="about-text-list">Дизайн</p>
+                  <p class="product__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img3.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -166,23 +169,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Ресторан Seafood</h3>
-                  <p class="about-text-list">Приложение</p>
+                <div class="product">
+                  <h3 class="product__name">Ресторан Seafood</h3>
+                  <p class="product__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img4.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -190,23 +193,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Проект Prime</h3>
-                  <p class="about-text-list">Маркетинг</p>
+                <div class="product">
+                  <h3 class="product__name">Проект Prime</h3>
+                  <p class="product__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img5.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -214,23 +217,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Проект Boxes</h3>
-                  <p class="about-text-list">Приложение</p>
+                <div class="product">
+                  <h3 class="product__name">Проект Boxes</h3>
+                  <p class="product__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img6.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -238,23 +241,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Inspiration has no Borders</h3>
-                  <p class="about-text-list">Веб-сайт</p>
+                <div class="product">
+                  <h3 class="product__name">Inspiration has no Borders</h3>
+                  <p class="product__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img7.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -262,23 +265,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Издание Limited Edition</h3>
-                  <p class="about-text-list">Дизайн</p>
+                <div class="product">
+                  <h3 class="product__name">Издание Limited Edition</h3>
+                  <p class="product__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img8.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -286,23 +289,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Проект LAB</h3>
-                  <p class="about-text-list">Маркетинг</p>
+                <div class="product">
+                  <h3 class="product__name">Проект LAB</h3>
+                  <p class="product__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a href="" class="examples-link link">
-                <div class="examples-div">
+            <li class="examples__item">
+              <a href="" class="examples__link link">
+                <div class="examples__box">
                   <img
-                    class="picture"
+                    class="examples__img"
                     src="./img/img9.jpg"
                     alt="Ноутбук-с-сайтом"
                     width="370"
                   />
-                  <div class="examples-overlay">
-                    <p class="examples-text">
+                  <div class="examples__overlay">
+                    <p class="examples__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
@@ -310,9 +313,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="examples-item-div">
-                  <h3 class="about-title-list">Growing Business</h3>
-                  <p class="about-text-list">Приложение</p>
+                <div class="product">
+                  <h3 class="product__name">Growing Business</h3>
+                  <p class="product__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -320,30 +323,29 @@
         </div>
       </div>
     </main>
-
     <!--Футер-->
     <footer class="footer">
       <div class="container footer-nav">
-        <div class="address-nav">
-          <a class="footer-logo link" href=""
-            >Web<span class="footer-logo-sudio">Studio</span></a
+        <div class="footer-nav__box">
+          <a class="footer-nav__logo link" href=""
+            >Web<span class="footer-nav__sudio">Studio</span></a
           >
           <address class="address">
-            <ul class="list addres-list">
-              <li class="address-item">
+            <ul class="list address__list">
+              <li class="address__item">
                 <a
-                  class="link address-footer"
+                  class="link address__link"
                   href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383859?hl=ru"
                   title="Гугл карты"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="address-item">
+              <li class="address__item">
                 <a class="link footer-address" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="address-item">
+              <li class="address__item">
                 <a class="link footer-address" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
@@ -351,34 +353,34 @@
             </ul>
           </address>
         </div>
-        <div class="footer-div">
-          <h3 class="footer-title-icon">присоединяйтесь</h3>
-          <div class="footer-icon-div">
-            <ul class="list footer-list-icon">
-              <li class="footer-item-icon">
-                <a class="footer-link-icon" href="">
-                  <svg class="footer-icon" width="20" height="20">
+        <div class="footer-social">
+          <h3 class="footer-social__title">присоединяйтесь</h3>
+          <div class="social-box">
+            <ul class="list social-box__list">
+              <li class="social-box__item">
+                <a class="social-box__link" href="">
+                  <svg class="social-box__icon" width="20" height="20">
                     <use href="./img/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-item-icon">
-                <a class="footer-link-icon" href="">
-                  <svg class="footer-icon" width="20" height="20">
+              <li class="social-box__item">
+                <a class="social-box__link" href="">
+                  <svg class="social-box__icon" width="20" height="20">
                     <use href="./img/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-item-icon">
-                <a class="footer-link-icon" href="">
-                  <svg class="footer-icon" width="20" height="20">
+              <li class="social-box__item">
+                <a class="social-box__link" href="">
+                  <svg class="social-box__icon" width="20" height="20">
                     <use href="./img/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-item-icon">
-                <a class="footer-link-icon" href="">
-                  <svg class="footer-icon" width="20" height="20">
+              <li class="social-box__item">
+                <a class="social-box__link" href="">
+                  <svg class="social-box__icon" width="20" height="20">
                     <use href="./img/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -386,20 +388,20 @@
             </ul>
           </div>
         </div>
-        <div class="footer-email">
-          <h3 class="footer-title-icon">Подпишитесь на рассылку</h3>
+        <div class="email-box">
+          <h3 class="email-box__title">Подпишитесь на рассылку</h3>
           <form>
-            <div class="footer-subscribe">
+            <div class="subscribe-box">
               <input
                 type="text"
                 name="btn"
                 id="btn"
-                class="footer-input"
+                class="subscribe-box__input"
                 placeholder="E-mail"
               />
-              <label for="button" class="footer-label">
-                <button type="button" class="footer-btn" id="button">
-                  <svg class="footer-subscribe-svg">
+              <label for="button" class="subscribe-box__label">
+                <button type="button" class="subscribe-box__btn" id="button">
+                  <svg class="subscribe-box__svg">
                     <use href="./img/icons.svg#icon-send"></use>
                   </svg>
                   Подписаться
@@ -409,6 +411,7 @@
           </form>
         </div>
       </div>
+    </footer>
     </footer>
   </body>
 </html>
