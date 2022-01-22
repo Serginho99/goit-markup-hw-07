@@ -105,6 +105,23 @@ img {
   background-color: #2196f3;
 }
 
+.nav__link--current {
+  color: #2196f3;
+}
+
+.nav__link--current::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
 .contact-list {
   display: -webkit-box;
   display: -ms-flexbox;
