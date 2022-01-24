@@ -382,7 +382,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--heading-color);
+  color: #212121;
   margin-top: 30px;
   margin-bottom: 10px;
   height: 19px;
@@ -394,7 +394,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: #757575;
   margin-bottom: 16px;
   height: 19px;
 }
