@@ -233,7 +233,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--heading-color);
+  color: #212121;
   margin-bottom: 10px;
 }
 
